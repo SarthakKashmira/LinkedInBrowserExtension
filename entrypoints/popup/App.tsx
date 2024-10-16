@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import ReactDOM from 'react-dom';
-import MessageIcon from './components/Icon';
+import MessageIcon from './components/MessageIcon.tsx';
 
 const App = () => {
   const [inputBox, setInputBox] = useState<HTMLElement | null>(null);
@@ -12,7 +12,7 @@ const App = () => {
       if (inputBox) {
         setInputBox(inputBox as HTMLElement);
       } else {
-        setTimeout(findInputBox, 1000); // Retry after 1 second
+        setTimeout(findInputBox, 1000); // Retry after 1 second  sarthakkashmira123@gmail.com   ttlshiwwya
       }
     };
 
@@ -30,9 +30,10 @@ const App = () => {
   }, [inputBox]);
 
   return (
-    <div>
-      LinkedIn
+    <div className="text-center text-xl font-bold bg-blue-600 text-white p-4 rounded-lg shadow-lg">
+      LinkedIn AI Assistant For Messaging
     </div>
+
   );
 };
 
